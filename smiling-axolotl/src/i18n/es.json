@@ -137,5 +137,23 @@
     "next": "Siguiente proyecto",
     "close": "Cerrar detalles del proyecto",
     "visit": "VISITAR PROYECTO"
+  },
+  "ugc": {
+    "invalid": "Código Inválido",
+    "noCodeProvided": "No se proporcionó ningún código en la URL.",
+    "unsupportedCodeFormat": "Este formato de código no es compatible.",
+    "copyCode": "Copiar código",
+    "copied": "Copiado",
+    "copyFailed": "Error al copiar",
+    "openRedeem": "Abrir juego de canje",
+    "thirdStep": "Envía y disfruta tu artículo.",
+    "secondStep": "Introduce este código.",
+    "firstStep": "Únete al juego de canje.",
+    "fallbackHeader": "¿Necesitas ayuda?",
+    "fallback": "Si no fuiste redirigido o tu artículo no apareció, haz esto:",
+    "socialsLabel": "Síguenos",
+    "countdownNote": "La redirección comienza automáticamente cuando termina el temporizador.",
+    "seconds": "seg.",
+    "countdownMessage": "SERÁS\nREDIRIGIDO EN"
   }
 }

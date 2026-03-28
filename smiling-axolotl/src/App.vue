@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <StickyNavbar />
-    <HeroSection />
-    <GrowBrandSection />
-    <ProjectsSection />
-    <StrategicSection />
-    <ServicesSection />
-    <FooterSection />
-    <LanguageToggle />
+    <UgcRedirectPage v-if="isUgcRoute" />
+    <template v-else-if="!isAdminRoute">
+      <StickyNavbar />
+      <HeroSection />
+      <GrowBrandSection />
+      <ProjectsSection />
+      <StrategicSection />
+      <ServicesSection />
+      <FooterSection />
+      <LanguageToggle />
+    </template>
   </div>
 </template>
 
@@ -20,6 +23,7 @@ import StrategicSection from './components/StrategicSection.vue';
 import ServicesSection from './components/ServicesSection.vue';
 import FooterSection from './components/FooterSection.vue';
 import LanguageToggle from './components/LanguageToggle.vue';
+import UgcRedirectPage from './components/UgcRedirectPage.vue';
 
 export default {
   name: 'App',
@@ -31,7 +35,16 @@ export default {
     StrategicSection,
     ServicesSection,
     FooterSection,
-    LanguageToggle
+    LanguageToggle,
+    UgcRedirectPage,
+  },
+  computed: {
+    isUgcRoute() {
+      return /^\/ugc(\/|$)/i.test(window.location.pathname);
+    },
+    isAdminRoute() {
+      return /^\/admin(\/|$)/i.test(window.location.pathname);
+    },
   },
   methods: {
     initSmoothScrolling() {
@@ -54,7 +67,16 @@ export default {
     }
   },
   mounted() {
-    this.initSmoothScrolling();
+    if (this.isAdminRoute) {
+      if (!/\/admin\/index\.html$/i.test(window.location.pathname)) {
+        window.location.replace(`/admin/index.html${window.location.search}${window.location.hash}`);
+      }
+      return;
+    }
+
+    if (!this.isUgcRoute) {
+      this.initSmoothScrolling();
+    }
   }
 }
 </script>

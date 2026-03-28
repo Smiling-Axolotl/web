@@ -137,5 +137,23 @@
     "next": "Next project",
     "close": "Close project details",
     "visit": "VISIT PROJECT"
+  },
+  "ugc": {
+    "invalid": "Invalid Code",
+    "noCodeProvided": "No code was provided in the URL.",
+    "unsupportedCodeFormat": "This code format is not supported.",
+    "copyCode": "Copy code",
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "openRedeem": "Open redeem game",
+    "thirdStep": "Submit and enjoy your item.",
+    "secondStep": "Enter this code.",
+    "firstStep": "Join the redeem game.",
+    "fallbackHeader": "Need Help?",
+    "fallback": "If you were not redirected, or your item did not appear, do this:",
+    "socialsLabel": "Check us out",
+    "countdownNote": "Redirect starts automatically when the timer ends.",
+    "seconds": "sec.",
+    "countdownMessage": "YOU'LL BE\nREDIRECTED IN"
   }
 }
