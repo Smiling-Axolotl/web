@@ -13,6 +13,9 @@
               <Tooltip text="Creating Madness" position="bottom">
                 <img :src="creatingMadnessLogo" alt="Creating Madness" class="partner-logo" />
               </Tooltip>
+              <Tooltip text="Konect Network" position="bottom">
+                <img :src="konectNetworkLogo" alt="Konect Network" class="partner-logo" />
+              </Tooltip>
             </div>
           </div>
         </div>
@@ -48,6 +51,7 @@
 import Tooltip from './Tooltip.vue';
 import CreatingMadnessLogo from '../assets/partners/CreatingMadness.svg';
 import AstralLabsLogo from '../assets/partners/AstralLabs.svg';
+import KonectNetworkLogo from '../assets/partners/KonectNetwork.svg';
 import BaobabLogo from '../assets/experience/Baobab.svg';
 import SecondChanceLogo from '../assets/experience/SecondChanceProd.svg';
 import NetflixNextWorldLogo from '../assets/experience/NetflixNextWorld.svg';
@@ -62,6 +66,7 @@ export default {
     return {
       creatingMadnessLogo: CreatingMadnessLogo,
       astralLabsLogo: AstralLabsLogo,
+      konectNetworkLogo: KonectNetworkLogo,
       baobabLogo: BaobabLogo,
       secondChanceLogo: SecondChanceLogo,
       netflixNextWorldLogo: NetflixNextWorldLogo,
